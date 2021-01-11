@@ -38,7 +38,8 @@ if conn is not None:
 
 
 client = commands.Bot(">")
-TOKEN = "NzkyNTI2MzAzNjk2NzgxMzUz.X-e_ow.GTWQNhtQgzn_vdBSBmQgPLDSWGA"
+f = open('key.txt','r')
+TOKEN = f.read()
 
 @client.event
 async def on_ready():
